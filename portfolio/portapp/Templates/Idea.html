@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'port.css' %}">
+
+
+</head>
+<body>
+<section class="vh-100" style="background-color: #495057;">
+<header class="p-3 text-bg-dark">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="project" class="nav-link px-2 text-white">Projects</a></li>
+        </ul>
+
+
+        <div class="text-end">
+          <a type="button" class="btn btn-outline-light me-2" id="contactButton">Contact</a>
+          <a type="button" href="hire" class="btn btn-warning">HIRE NOW</a>
+        </div>
+          <script>
+              document.getElementById('contactButton').addEventListener('click', function() {
+                const footer = document.querySelector('footer');
+                footer.scrollIntoView({ behavior: 'smooth' });
+              });
+          </script>
+      </div>
+        <div class="p-5 container-fluid text-bg-dark">
+            <h1 class="text-center" style="font-family: Roboto Slab; font-size: 60px">Praveen Raj.V</h1>
+            <div class="p-3 content" style="font-family: 'Roboto';font-size: 18px;">
+                <p>
+                    I am an engineering graduate with a degree in computer science engineering, equipped with a diverse skill set encompassing
+                    technologies such as Python, Django, HTML, CSS, and more. My internship experience has provided me with hands-on
+                    exposure to real-world projects in these areas. I am currently seeking challenging roles within the development sector,
+                    actively exploring opportunities that align with my expertise and passion.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+<h1 class="text-center" style="font-size:55px;">Skills</h1>
+    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'python1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">PYTHON</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'django.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">DJANGO</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'HTML-1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">HTML</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    #Second row of image start here-->
+
+    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'css-1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">CSS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'selenium1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">Selenium</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'Bootstrap-1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">Bootstrap</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--Third row start here-->
+<div class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'api1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">API</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'data analytics.jpg' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">Data Analytics</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'machine learning.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">Machine Learning</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Fourth row start here-->
+    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'pycharm.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">PyCharm</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="{% static 'jupyter1.png' %}" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1">Jupyter Notebook</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% include "footer.html" %}
+  </header>
+</section>
+
+</body>
+</html>
