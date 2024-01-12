@@ -32,11 +32,6 @@ def hire(request):
 # Cred from ini file
 
 
-config = configparser.ConfigParser()
-config.read('cred.ini')
-sender = config['Cred_mail']['Sender']
-receiver = config['Cred_mail']['receiver']
-
 
 def registered(request):
     if request.method == 'POST':
@@ -53,8 +48,8 @@ def registered(request):
             # Send the email
             subject = 'New Hire Form Submission'
             message = f"Name: {name1}\nEmail: {email}\nPhone: {mobile}\nComments: {comment}\nBudget: {choice}"
-            from_email = sender  # Use the email you configured in settings.py
-            recipient_list = [receiver]  # Your email address
+            from_email = "praveenrajvelmurugan@gmail.com"  # Use the email you configured in settings.py
+            recipient_list = ["praveenraj22072002@gmail.com"]  # Your email address
             send_mail(subject, message, from_email, recipient_list)
 
             messages.success(request, "Data has been sent successfully")
